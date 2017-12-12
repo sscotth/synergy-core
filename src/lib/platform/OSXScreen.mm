@@ -1861,6 +1861,9 @@ OSXScreen::handleCGInputEventSecondary(
                 LOG((CLOG_INFO "local input detected"));
         }
     }
+    else {
+        LOG((CLOG_INFO "detected an input event originated from core, type: 0x%02x", type));
+    }
 
 	return event;
 }
